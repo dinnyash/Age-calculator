@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    background: url("Backgroundage.jpg")
+      no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .baseOfAge {
+    backdrop-filter: blur(18px);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .baseOfAge:hover {
+    transform: translateY(-5px); /* Move the element up by 5 pixels on hover */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Increase box shadow on hover */
+  }
+  
+  .center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 5vh;
+    color: white;
+    font-family: cursive;
+  }
+  
+  
+  input[type="text"] {
+    width: 140px;
+    margin: auto;
+    outline: none;
+    min-height: 50px;
+    border-radius: 2px;
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+   
+  }
+  
+  input[type="text"]:focus {
+    border: 5px solid rgb(255, 255, 255);
+    transition-duration: 1.5s;
+    border-radius: 8px;
+    transform: translateY(-5px); /* Move the element up by 5 pixels on hover */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  input[type="button"] {
+    width: 140px;
+    margin: auto;
+    outline: none;
+    min-height: 50px;
+    border-radius: 2px;
+    color: rgb(51, 47, 114);
+    font-size: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 25px;
+    background-color: white;
+    
+  }
+  
+  input[type="button"]:focus {
+    border: 5px solid white;
+    transition-duration: 1.5s;
+    border-radius: 8px;
+  }
+  
+  .age {
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-family: cursive;
+  }
